@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images/banner.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+/*header*/
+
+header{
+    position: absolute;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+
+}
+#page{
+    font-weight: 500;
+    border-bottom: #588E61 solid;
+    padding-bottom: 3px;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+
+.logo{
+    height: 35px;
+}
+.header-button{
+    display: flex;
+    width: 250px;
+    justify-content: space-around;
+}
+.header-button>*{
+    background: none;
+    border: none;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.signup{
+    padding: 15px 25px;
+    background-color: #588E61;
+    border-radius: 10px;
+}
+
+/*form*/
+
+form{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 500px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.form-header{
+    font-family: "Playfair Display", serif;
+    color: black;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.div-input{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 80px;
+    justify-content: space-around;
+}
+
+label{
+    font-family: "Rubik", sans-serif;
+    color: #767E86;
+    font-size: 16px;
+}
+
+input{
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: solid black 1px;
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+form>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+    border: none;
+    height: 60px;
+    background-color: #588E61;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: #17212F;
+}

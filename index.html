@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/ol@v8.2.0/dist/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v8.2.0/ol.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="anime.js"></script>
+    <title>Travellian</title>
+</head>
+
+<body>
+    <header>
+        <!-- <img src="images/Logo.png" alt="" class="logo">
+        <nav class="main-nav">
+            <a href="#main" id="page" class="scroll">Главная</a>
+            <a href="#popular" class="scroll">Популярные</a>
+            <a href="#blog" class="scroll">Блог</a>
+            <a href="#review" class="scroll">Отзывы</a>
+            <a href="#contacts" class="scroll">Контакты</a>
+        </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div> -->
+        <img src="images/Logo.png" alt="" class="logo">
+        <div class="menu">
+            <div class="menu_item"><a href="#main" class="scroll">Главная</a></div>
+            <div class="menu_item"><a href="#popular" class="scroll">Популярное</a></div>
+            <div class="menu_item"><a href="#blog" class="scroll">Блог</a></div>
+            <div class="menu_item"><a href="#review" class="scroll">Отзывы</a></div>
+            <div class="menu_item"><a href="#contacts" class="scroll">Контакты</a></div>
+        </div>
+        <div class="menu_small_icon">
+            <div class="stick stick1"></div>
+            <div class="stick stick2"></div>
+            <div class="stick stick3"></div>
+        </div> 
+        
+        <div class="menu-small">
+            <div class="menu_small_item">Главная</div>
+            <span class="line"></span>
+            <div class="menu_small_item">Популярное</div>
+            <span class="line"></span>
+            <div class="menu_small_item">Блог</div>
+            <span class="line"></span>
+            <div class="menu_small_item">Отзывы</div>
+            <span class="line"></span>
+            <div class="menu_small_item">Контакты</div>
+            
+        </div>
+        <div class="header-button">
+            <button class="login">Вход</button>
+            <a href="signup.html" class="signup">Регистрация</a>
+        </div>
+    </header>
+    <main>
+        <!-- banner -->
+        <article class="banner" id="main">
+            <div class="banner-text">
+                <p class="banner-h1">Начни своё незабываемое приключение</p>
+                <p class="banner-p">Лучшее путешествие начинается сейчас</p>
+            </div>
+            <form action="">
+                <div class="info">
+                    <div class="div-input">
+                        <label for="">МЕСТО НАЗНАЧЕНИЯ</label>
+                        <input type="text">
+                    </div>
+                    <div class="div-input">
+                        <label for="">ПЕРСОН</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+                    </div>
+                    <div class="div-input">
+                        <label for="">ОТ</label>
+                        <input type="date">
+                    </div>
+                    <div class="div-input">
+                        <label for="">ДО</label>
+                        <input type="date">
+                    </div>
+                </div>
+                <button class="banner-button">Найти сейчас</button>
+            </form>
+        </article>
+        <!-- popular -->
+        <article class="popular" id="popular">
+            <div class="article-head">
+                <div class="title">
+                    <h1>Популярные места</h1>
+                    <span class="line"></span>
+                    <p>Самые известные природные достопримечательности мира</p>
+                </div>
+                <div class="popular-arrows arrows">
+                    <button class="arrow arrow-left">
+                        <img src="images/arrowl.png">
+                    </button>
+                    <button class="arrow arrow-right">
+                        <img src="images/arrowr.png">
+                    </button>
+                </div>
+            </div>
+            <div class="popular-slider">
+                <div class="popular-card popular1">
+                    <div class="shadow"></div>
+                    <div class="card-text">
+                        <p class="p1">Ниагарский водопад</p>
+                        <p class="p2">Канада</p>
+                    </div>
+                </div>
+                <div class="popular-card popular2">
+                    <div class="shadow"></div>
+                    <div class="card-text">
+                        <p class="p1">Солончак Уюни</p>
+                        <p class="p2">Боливия</p>
+                    </div>
+                </div>
+                <div class="popular-card popular3">
+                    <div class="shadow"></div>
+                    <div class="card-text">
+                        <p class="p1">Альпы</p>
+                        <p class="p2">Италия</p>
+                    </div>
+                </div>
+                <div class="popular-card popular4">
+                    <div class="shadow"></div>
+                    <div class="card-text">
+                        <p class="p1">Фудзияма</p>
+                        <p class="p2">Япония</p>
+                    </div>
+                </div>
+                <div class="popular-card popular5">
+                    <div class="shadow"></div>
+                    <div class="card-text">
+                        <p class="p1">Вулканы Камчатки</p>
+                        <p class="p2">Россия</p>
+                    </div>
+                </div>
+                <div class="popular-card popular6">
+                    <div class="shadow"></div>
+                    <div class="card-text">
+                        <p class="p1">Эверест</p>
+                        <p class="p2">Непал</p>
+                    </div>
+                </div>
+                <div class="popular-card popular7">
+                    <div class="shadow"></div>
+                    <div class="card-text">
+                        <p class="p1">Водопад Виктория</p>
+                        <p class="p2">Зимбабве</p>
+                    </div>
+                </div>
+            </div>
+            <div class="popular-arrows-small arrows-small">
+                <button class="arrow arrow-left">
+                    <img src="images/arrowl.png">
+                </button>
+                <button class="arrow arrow-right">
+                    <img src="images/arrowr.png">
+                </button>
+            </div>
+        </article>
+        <!-- special -->
+        <article class="special">
+            <div class="article-head">
+                <div class="arrows special-arrows">
+                    <button class="arrow arrow-left">
+                        <img src="images/arrowl.png">
+                    </button>
+                    <button class="arrow arrow-right">
+                        <img src="images/arrowr.png">
+                    </button>
+                </div>
+                <div class="title-right title">
+                    <h1>Специальные предложения</h1>
+                    <span class="line"></span>
+                    <p>Посмотрите наши специальные предложения и скидки</p>
+                </div>
+            </div>
+            <div class="special-slider">
+                <div class="special-card special1">
+                    <div class="img"></div>
+                    <div class="special-text">
+                        <div class="special-card-head">
+                            <p>Канада</p>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+                        </div>
+                        <div class="special-card-main">
+                            <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+                                the renaissance. Passage and going through the cites of the world in classical
+                                literature.</p>
+                        </div>
+                        <div class="special-card-footer">
+                            <div class="price">
+                                <p>От</p>
+                                <h1>$500</h1>
+                            </div>
+                            <button class="details">ДЕТАЛИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-card special2">
+                    <div class="img"></div>
+                    <div class="special-text">
+                        <div class="special-card-head">
+                            <p>Боливия</p>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+
+                        </div>
+                        <div class="special-card-main">
+                            <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+                                the renaissance. Passage and going through the cites of the world in classical
+                                literature.</p>
+                        </div>
+                        <div class="special-card-footer">
+                            <div class="price">
+                                <p>От</p>
+                                <h1>$500</h1>
+                            </div>
+                            <button class="details">ДЕТАЛИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-card special3">
+                    <div class="img"></div>
+                    <div class="special-text">
+                        <div class="special-card-head">
+                            <p>Италия</p>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+
+                        </div>
+                        <div class="special-card-main">
+                            <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+                                the renaissance. Passage and going through the cites of the world in classical
+                                literature.</p>
+                        </div>
+                        <div class="special-card-footer">
+                            <div class="price">
+                                <p>От</p>
+                                <h1>$500</h1>
+                            </div>
+                            <button class="details">ДЕТАЛИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-card special4">
+                    <div class="img"></div>
+                    <div class="special-text">
+                        <div class="special-card-head">
+                            <p>Япония</p>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+
+                        </div>
+                        <div class="special-card-main">
+                            <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+                                the renaissance. Passage and going through the cites of the world in classical
+                                literature.</p>
+                        </div>
+                        <div class="special-card-footer">
+                            <div class="price">
+                                <p>От</p>
+                                <h1>$500</h1>
+                            </div>
+                            <button class="details">ДЕТАЛИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-card special5">
+                    <div class="img"></div>
+                    <div class="special-text">
+                        <div class="special-card-head">
+                            <p>Россия</p>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+
+                        </div>
+                        <div class="special-card-main">
+                            <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+                                the renaissance. Passage and going through the cites of the world in classical
+                                literature.</p>
+                        </div>
+                        <div class="special-card-footer">
+                            <div class="price">
+                                <p>От</p>
+                                <h1>$500</h1>
+                            </div>
+                            <button class="details">ДЕТАЛИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-card special6">
+                    <div class="img"></div>
+                    <div class="special-text">
+                        <div class="special-card-head">
+                            <p>Непал</p>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+
+                        </div>
+                        <div class="special-card-main">
+                            <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+                                the renaissance. Passage and going through the cites of the world in classical
+                                literature.</p>
+                        </div>
+                        <div class="special-card-footer">
+                            <div class="price">
+                                <p>От</p>
+                                <h1>$500</h1>
+                            </div>
+                            <button class="details">ДЕТАЛИ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-card special7">
+                    <div class="img"></div>
+                    <div class="special-text">
+                        <div class="special-card-head">
+                            <p>Зимбабве</p>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+
+                        </div>
+                        <div class="special-card-main">
+                            <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during
+                                the renaissance. Passage and going through the cites of the world in classical
+                                literature.</p>
+                        </div>
+                        <div class="special-card-footer">
+                            <div class="price">
+                                <p>От</p>
+                                <h1>$500</h1>
+                            </div>
+                            <button class="details">ДЕТАЛИ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows-small special-arrows-small">
+                <button class="arrow arrow-left">
+                    <img src="images/arrowl.png">
+                </button>
+                <button class="arrow arrow-right">
+                    <img src="images/arrowr.png">
+                </button>
+            </div>
+        </article>
+
+        <!-- blog -->
+
+        <article class="blog" id="blog">
+            <div class="article-head">
+                <div class="title-left title">
+                    <h1>Наш блог</h1>
+                    <span class="line"></span>
+                    <p>Познайте невероятный опыт в мире</p>
+                </div>
+            </div>
+            <div class="blog-content">
+                <div class="blog-img"></div>
+                <div class="blog-text">
+                    <div class="blog-h1">
+                        <p>Beautiful Italy</p>
+                        <p>Let's travel</p>
+                    </div>
+                    <div class="blog-p">
+                        <p class="p-space">I must explain to you how all this mistaken idea of</p>
+                        <p>denouncing pleasure and praising pain was born and I will give you a complete account of the
+                            system and expound the actual teachings of the great explorer of the truth, the master-
+                            builder of human happiness. No one rejects, dislike, or avoids plasure itself, because it is
+                            pleasure, but because those who do not know how to pursue pleasure rationally encounter
+                            consequences that are extremly painful. Nor again is there anyone who loves or pursues.</p>
+                    </div>
+                    <div class="blog-p-small">
+                        <p>I must explain to you how all this mistaken idea of
+                            denouncing pleasure and praising pain was...</p>
+                    </div>
+                    <div class="more">
+                        <a href="">Читать дальше</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- plans -->
+
+        <article class="plans">
+            <div class="plans-head">
+                <div class="plans-title title">
+                    <h1>Планы</h1>
+                    <span class="line"></span>
+                    <p>20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting
+                        and start travelling, start throwing off the bowlines.</p>
+                </div>
+                <div class="div-plans-button">
+                    <div class="dark"></div>
+                    <div class="light"></div>
+                    <button class="plans-button">Все планы поездок</button>
+                </div>
+            </div>
+            <div class="plans-cards-behind">
+                <div class="plans-card-behind plans-behind1">
+                    <div class="plan-p1">
+                        <p>ТУР С ГИДОМ</p>
+                        <p>99$/День</p>
+                    </div>
+                    <div class="plan-h1">
+                        <p>Ниагарский водопад</p>
+                    </div>
+                    <div class="plan-p2">
+                        <div class="stars">
+                            <img src="images/star.png" alt="" class="star">
+                            <img src="images/star.png" alt="" class="star">
+                            <img src="images/star.png" alt="" class="star">
+                            <img src="images/star.png" alt="" class="star">
+                            <img src="images/star.png" alt="" class="star">
+                        </div>
+                        <div class="days">
+                            <p>7 дней</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-card-behind plans-behind2">
+                    <div class="plans-card-behind plans-behind1">
+                        <div class="plan-p1">
+                            <p>ТУР С ГИДОМ</p>
+                            <p>99$/День</p>
+                        </div>
+                        <div class="plan-h1">
+                            <p>Вулканы Камчатки</p>
+                        </div>
+                        <div class="plan-p2">
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+                            <div class="days">
+                                <p>7 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-card-behind plans-behind3">
+                    <div class="plans-card-behind plans-behind1">
+                        <div class="plan-p1">
+                            <p>ТУР С ГИДОМ</p>
+                            <p>99$/День</p>
+                        </div>
+                        <div class="plan-h1">
+                            <p>Солончак Уюни</p>
+                        </div>
+                        <div class="plan-p2">
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+                            <div class="days">
+                                <p>7 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="plans-cards">
+                <div class="plans-card plans1"></div>
+                <div class="plans-card plans2"></div>
+                <div class="plans-card plans3"></div>
+            </div>
+            
+            <div class="plans-slider">
+                <div class="plans-card-small plans-small1">
+                    <div class="plans-img"></div>
+                    <div class="plans-card-text plans-text1">
+                        <div class="plan-p1">
+                            <p>ТУР С ГИДОМ</p>
+                            <p>99$/День</p>
+                        </div>
+                        <div class="plan-h1">
+                            <p>Ниагарский водопад</p>
+                        </div>
+                        <div class="plan-p2">
+                            <div class="stars stars-plans">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+                            <div class="days">
+                                <p>7 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-card-small plans-small2">
+                    <div class="plans-img"></div>
+                    <div class="plans-card-text plans-text1">
+                        <div class="plan-p1">
+                            <p>ТУР С ГИДОМ</p>
+                            <p>99$/День</p>
+                        </div>
+                        <div class="plan-h1">
+                            <p>Солончак Уюни</p>
+                        </div>
+                        <div class="plan-p2">
+                            <div class="stars stars-plans">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+                            <div class="days">
+                                <p>7 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="plans-card-small plans-small3">
+                    <div class="plans-img"></div>
+                    <div class="plans-card-text plans-text1">
+                        <div class="plan-p1">
+                            <p>ТУР С ГИДОМ</p>
+                            <p>99$/День</p>
+                        </div>
+                        <div class="plan-h1">
+                            <p>Вулканы Камчатки</p>
+                        </div>
+                        <div class="plan-p2">
+                            <div class="stars stars-plans">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+                            <div class="days">
+                                <p>7 дней</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows-small plans-arrows-small">
+                <button class="arrow arrow-left">
+                    <img src="images/arrowl.png">
+                </button>
+                <button class="arrow arrow-right">
+                    <img src="images/arrowr.png">
+                </button>
+            </div>
+        </article>
+
+
+        <!-- review -->
+
+
+        <article class="review" id="review">
+            <div class="article-head">
+                <div class="title-left title">
+                    <h1>Отзывы</h1>
+                    <span class="line"></span>
+                    <p>Фидбек от наших путешественников</p>
+                </div>
+                <div class="arrows review-arrows">
+                    <button class="arrow arrow-left">
+                        <img src="images/arrowl.png">
+                    </button>
+                    <button class="arrow arrow-right">
+                        <img src="images/arrowr.png">
+                    </button>
+                </div>
+            </div>
+            <div class="review-slider">
+                <div class="review-card">
+                    <div class="user"></div>
+                    <div class="review-back">
+                        <div class="review-card-content">
+                            <div class="review-text">
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you a complete account of the system and
+                                    expound the actual teachings of the great explorer of the truth, the master- builder
+                                    of human happiness.</p>
+                            </div>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+                            <div class="name">
+                                <p class="name-p1">John Doe</p>
+                                <p class="name-p2">Accountant</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="user"></div>
+                    <div class="review-back">
+                        <div class="review-card-content">
+                            <div class="review-text">
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you a complete account of the system and
+                                    expound the actual teachings of the great explorer of the truth, the master- builder
+                                    of human happiness.</p>
+                            </div>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+                            <div class="name">
+                                <p class="name-p1">John Doe</p>
+                                <p class="name-p2">Accountant</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="user"></div>
+                    <div class="review-back">
+                        <div class="review-card-content">
+                            <div class="review-text">
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you a complete account of the system and
+                                    expound the actual teachings of the great explorer of the truth, the master- builder
+                                    of human happiness.</p>
+                            </div>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+                            <div class="name">
+                                <p class="name-p1">John Doe</p>
+                                <p class="name-p2">Accountant</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="user"></div>
+                    <div class="review-back">
+                        <div class="review-card-content">
+                            <div class="review-text">
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you a complete account of the system and
+                                    expound the actual teachings of the great explorer of the truth, the master- builder
+                                    of human happiness.</p>
+                            </div>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+                            <div class="name">
+                                <p class="name-p1">John Doe</p>
+                                <p class="name-p2">Accountant</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>  
+                <div class="review-card">
+                    <div class="user"></div>
+                    <div class="review-back">
+                        <div class="review-card-content">
+                            <div class="review-text">
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and
+                                    praising pain was born and I will give you a complete account of the system and
+                                    expound the actual teachings of the great explorer of the truth, the master- builder
+                                    of human happiness.</p>
+                            </div>
+                            <div class="stars">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                                <img src="images/star.png" alt="" class="star">
+                            </div>
+                            <div class="name">
+                                <p class="name-p1">John Doe</p>
+                                <p class="name-p2">Accountant</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>  
+            </div>
+            <div class="arrows-small review-arrows-small">
+                <button class="arrow arrow-left">
+                    <img src="images/arrowl.png">
+                </button>
+                <button class="arrow arrow-right">
+                    <img src="images/arrowr.png">
+                </button>
+            </div>
+        </article>
+
+        <!-- contacts -->
+
+        <article class="contacts" id="contacts">
+            <div class="article-head">
+                <div class="title-left title">
+                    <h1>Наши контакты</h1>
+                    <span class="line"></span>
+                    <p>Узнайте как с нами связаться</p>
+                </div>
+            </div>
+            <div class="contacts-content">
+                <div id="map"></div>
+                <div class="contacts-info">
+                    <div class="info-p">
+                        <h1>Адрес:</h1>
+                        <p>Г. Город, ул. Улица 1</p>
+                        <p>Открыто с 9:00 до 20:00</p>
+                    </div>
+                    <span class="line"></span>
+                    <div class="info-p">
+                        <h1>Телефон:</h1>
+                        <p>+7 000 000 00 00</p>
+                    </div>
+                    <span class="line"></span>
+                    <div class="info-p">
+                        <h1>Почта:</h1>
+                        <p>travellian@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="sub">
+            <div class="sub-div">
+            <div class="sub-h1">
+                <p>Наша Рассылка</p>
+            </div>
+            <form class="sub-form">
+                <input type="email" class="email" placeholder="Введите ваш email">
+                <button class="subscribe">Подписаться</button>
+            </form>
+        </div>
+        </article>
+        
+    </main>
+    <footer>
+        <div class="footer-logo">
+            <img src="images/Logo.png">
+            <p>Copyright © Travellian 2020 All rights reserved</p>
+        </div>
+        <div class="footer-list">
+            <p class="footer-h">Меню</p>
+            <div class="footer-nav footer-menu">
+                <a href="" class="footer-a">Главная</a>
+                <a href="" class="footer-a">О нас</a>
+                <a href="" class="footer-a">Блог</a>
+                <a href="" class="footer-a">Цены</a>
+            </div>
+        </div>
+        <div class="footer-list">
+            <p class="footer-h">Информация</p>
+            <div class="footer-nav footer-info">
+                <a href="" class="footer-a">Пункты назначения</a>
+                <a href="" class="footer-a">Поддержка</a>
+                <a href="" class="footer-a">Условия</a>
+                <a href="" class="footer-a">Приватность</a>
+            </div>
+        </div>
+        <div class="footer-list">
+            <p class="footer-h">Контакты</p>
+            <div class="footer-nav footer-contacts">
+                <p class="footer-p">Город, Улица 1</p>
+                <p class="footer-p">+7 000 000 00 00</p>
+                <p class="footer-p">travellian@gmail.com</p>
+            </div>
+        </div>
+            <div class="footer-list">
+                <p class="footer-h">Соцсети</p>
+                <div class="footer-list footer-follow">
+                    <div class="apps">
+                        <img src="images/facebook.png" alt="">
+                        <img id="pint" src="images/pinterest.png" alt="">
+                        <img src="images/instagram.png" alt="">
+                        <img src="images/twitter.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
